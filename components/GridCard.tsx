@@ -21,13 +21,13 @@ const GridCard = ({
         reverse ? "[&>*:first-child]:order-2 [&>*:last-child]:order-1" : ""
       }`}
     >
-      <div className="md:p-20 p-10 col-span-2 md:col-span-1">
+      <div className="md:p-14 p-10 col-span-2 md:col-span-1">
         <img src={imageSrc} className="w-full h-auto" alt="" />
       </div>
       <div className="col-span-1 flex align-center">
         <div
           className={`flex flex-col gap-5 my-auto ${
-            reverse ? "text-end ml-auto" : ""
+            reverse ? "text-end ml-auto pe-8" : "ps-8"
           }`}
         >
           <span

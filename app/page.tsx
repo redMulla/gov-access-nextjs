@@ -3,6 +3,42 @@ import NavBar from "@/components/NavBar";
 import Image from "next/image";
 
 export default function Home() {
+  const cardData = [
+    {
+      img: "/images/registration.svg",
+      tagText: "Company Registration",
+      title: "Make it official",
+      description:
+        "Start your business in just a few clicks. Receive all the necessary documents for your company directly in your inbox—quick, simple, and hassle-free.",
+      reverse: false,
+    },
+
+    {
+      img: "/images/compliance.svg",
+      tagText: "Compliance",
+      title: "Stay compliant",
+      description:
+        "Stay ahead with effortless compliance. GovAccess Compliance™ handles the hard parts, keeps you penalty-free, and makes compliance stress-free.",
+      reverse: true,
+    },
+
+    {
+      img: "/images/bookkeepping.svg",
+      tagText: "Bookkeeping",
+      title: "Manage finance",
+      description: `No more complicated software or costly bookkeepers. GovAccess Books™ lets you send invoices, receive payments, and file taxes—all in one place.`,
+      reverse: false,
+    },
+
+    {
+      img: "/images/taxes.svg",
+      tagText: "Taxes",
+      title: "Manage finance",
+      description: `Filing company tax returns doesn't need to be complicated. GovAccess Tax™ takes care of everything—from start to finish. We simplify taxes so you stay stress-free and penalty-free.`,
+      reverse: true,
+    },
+  ];
+
   return (
     <main className="bg-white text-textColor h-full w-full">
       <NavBar />
@@ -48,14 +84,17 @@ export default function Home() {
           </span>
         </div>
 
-        <div>
-          <GridCard
-            imageSrc="/images/registration.svg"
-            tagText="Company Registration"
-            title="Make it official"
-            description="Start your business in just a few clicks. Receive all the necessary documents for your company directly in your inbox—quick, simple, and hassle-free."
-            reverse={true} // Set to false or omit for default layout
-          />
+        <div className="flex flex-col gap-6">
+          {cardData.map((data) => (
+            <GridCard
+              key={data.tagText}
+              imageSrc={data.img}
+              tagText={data.tagText}
+              title={data.title}
+              description={data.description}
+              reverse={data.reverse}
+            />
+          ))}
         </div>
       </section>
     </main>
