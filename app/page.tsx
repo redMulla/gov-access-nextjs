@@ -96,6 +96,17 @@ export default function Home() {
             />
           ))}
         </div>
+
+        <div className="mt-4 flex flex-col max-w-[709.86px] mx-auto gap-6 mb-6">
+          <span className="text-[54.98px] leading-[67.5px] font-bold text-center">
+            Here’s why small business owners ♥️ GovAccess
+          </span>
+
+          <span className="leading-[36px] text-center text-[20.3px] tracking-[-0.51px]">
+            GovAccess has helped over 100k small business owners in Burundi
+            simplify starting their businesses and staying compliant.
+          </span>
+        </div>
       </section>
     </main>
   );
