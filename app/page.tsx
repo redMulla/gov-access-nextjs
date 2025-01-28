@@ -123,6 +123,25 @@ export default function Home() {
           <ReviewCard />
           <ReviewCard />
         </div>
+
+        <div className="my-20 flex flex-col max-w-[906px] py-16 rounded-xl mx-auto bg-customBlue text-white">
+          <div className="max-w-[643px] mx-auto text-center">
+            <p className="text-4xl font-bold">Ready to launch your business?</p>
+
+            <p className="mt-7 text-[20.3]">
+              Take the first step towards success with GovAccess. Let us handle
+              the hard parts, so you can focus on growing your dream business.
+            </p>
+          </div>
+
+          <button className="py-4 px-7 rounded-full bg-white text-customBlue max-w-max mx-auto mt-7">
+            Start a company
+          </button>
+
+          <p className="text-center mt-7 text-[15.8px]">
+            Already have a registered company?
+          </p>
+        </div>
       </section>
     </main>
   );

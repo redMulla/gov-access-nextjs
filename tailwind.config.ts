@@ -12,6 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         textColor: "#18181B",
+        customBlue: "#0000FF",
       },
     },
   },
