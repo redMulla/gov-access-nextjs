@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="w-full py-4 flex justify-between align-center border-black border-b px-6">
+    <div className="w-full py-4 flex justify-between align-center border-black border-b px-6 fixed bg-white  max-w-[100vw]">
       <div>
         <img
           src="/images/Logo.svg"
