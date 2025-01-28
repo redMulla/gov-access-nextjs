@@ -1,5 +1,6 @@
 import GridCard from "@/components/GridCard";
 import NavBar from "@/components/NavBar";
+import ReviewCard from "@/components/ReviewCard";
 import SocialReview from "@/components/SocialReview";
 import Image from "next/image";
 
@@ -109,9 +110,18 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="flex justify-center gap-4 flex-wrap my-20">
+        <div className="flex justify-center gap-4 flex-wrap mt-20 mb-9">
           <SocialReview />
           <SocialReview />
+        </div>
+
+        <div className="pb-4 flex flex-wrap justify-around gap-4">
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
         </div>
       </section>
     </main>
