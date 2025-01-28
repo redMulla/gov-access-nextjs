@@ -1,5 +1,6 @@
 import GridCard from "@/components/GridCard";
 import NavBar from "@/components/NavBar";
+import SocialReview from "@/components/SocialReview";
 import Image from "next/image";
 
 export default function Home() {
@@ -97,7 +98,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="mt-4 flex flex-col max-w-[709.86px] mx-auto gap-6 mb-6">
+        <div className="mt-20 flex flex-col max-w-[709.86px] mx-auto gap-6 mb-6">
           <span className="text-[54.98px] leading-[67.5px] font-bold text-center">
             Here’s why small business owners ♥️ GovAccess
           </span>
@@ -106,6 +107,11 @@ export default function Home() {
             GovAccess has helped over 100k small business owners in Burundi
             simplify starting their businesses and staying compliant.
           </span>
+        </div>
+
+        <div className="flex justify-center gap-4 flex-wrap my-20">
+          <SocialReview />
+          <SocialReview />
         </div>
       </section>
     </main>
