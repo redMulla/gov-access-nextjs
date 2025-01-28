@@ -27,7 +27,7 @@ const GridCard = ({
       <div className="col-span-1 flex align-center">
         <div
           className={`flex flex-col gap-5 my-auto ${
-            reverse ? "text-end ml-auto pe-8" : "ps-8"
+            reverse ? "text-end ml-auto pe-10" : "ps-10"
           }`}
         >
           <span
