@@ -1,3 +1,4 @@
+import GridCard from "@/components/GridCard";
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
 
@@ -14,7 +15,7 @@ export default function Home() {
         </div>
 
         <div className="mt-7 text-center max-w-[960px] mx-auto w-full flex flex-col gap-6">
-          <span className="text-[66.6px] font-bold leading-[81px]">
+          <span className="text-6xl font-bold leading-[81px]">
             Everything you need to start, run, and grow your company — all in
             one place.
           </span>
@@ -45,6 +46,10 @@ export default function Home() {
             compliance and automating the mundane work so you can focus on what
             matters most.
           </span>
+        </div>
+
+        <div>
+          <GridCard />
         </div>
       </section>
     </main>
