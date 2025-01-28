@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-white text-black h-[100vh] w-[100vw] overflow-auto">
+    <main className="bg-white text-textColor h-[100vh] w-[100vw] overflow-auto">
       <NavBar />
     </main>
   );
