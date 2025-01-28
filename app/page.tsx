@@ -49,7 +49,13 @@ export default function Home() {
         </div>
 
         <div>
-          <GridCard />
+          <GridCard
+            imageSrc="/images/registration.svg"
+            tagText="Company Registration"
+            title="Make it official"
+            description="Start your business in just a few clicks. Receive all the necessary documents for your company directly in your inbox—quick, simple, and hassle-free."
+            reverse={true} // Set to false or omit for default layout
+          />
         </div>
       </section>
     </main>
