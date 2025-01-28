@@ -14,12 +14,12 @@ export default function Home() {
         </div>
 
         <div className="mt-7 text-center max-w-[960px] mx-auto w-full flex flex-col gap-6">
-          <span className="text-[66.6px] font-bold">
+          <span className="text-[66.6px] font-bold leading-[81px]">
             Everything you need to start, run, and grow your company — all in
             one place.
           </span>
 
-          <span className="max-w-[683px] w-100 mx-auto text-[20.3px] text-[#334155]">
+          <span className="max-w-[683px] w-100 mx-auto text-[20.3px] text-[#334155] leading-[32.9px]">
             Start an official company, manage finances, stay compliant, file
             taxes, send invoices, and get paid.
           </span>
@@ -34,7 +34,18 @@ export default function Home() {
 
         <img src="/images/UI.svg" className="mx-auto mt-10 mb-4" alt="" />
 
-        <div className="max-w-[756px] mx-auto w-full text-center"></div>
+        <div className="max-w-[762px] mx-auto w-full text-center flex flex-col mt-20">
+          <span className="text-[55.11px] font-bold leading-[67.5px]">
+            All the essentials, none of the hassle.
+          </span>
+
+          <span className="text-[20.3px] my-8 text-center text-[#334155]">
+            Your time is valuable. GovAccess takes the hassle out of running
+            your business by handling complex tasks like registration and
+            compliance and automating the mundane work so you can focus on what
+            matters most.
+          </span>
+        </div>
       </section>
     </main>
   );
