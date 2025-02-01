@@ -11,6 +11,12 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -93,7 +99,7 @@ const NavBar = () => {
         <NavigationMenu className="my-auto">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-[15.8px] font-normal">
+              <NavigationMenuTrigger className="text-[15.8px] font-normal bg-white bg-opacity-25 backdrop-blur-sm">
                 Start
               </NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -112,7 +118,7 @@ const NavBar = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-[15.8px] font-normal">
+              <NavigationMenuTrigger className="text-[15.8px] font-normal bg-white bg-opacity-25 backdrop-blur-sm">
                 Run & Grow
               </NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -131,7 +137,7 @@ const NavBar = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-[15.8px] font-normal">
+              <NavigationMenuTrigger className="text-[15.8px] font-normal bg-white bg-opacity-25 backdrop-blur-sm">
                 Learn
               </NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -149,9 +155,14 @@ const NavBar = () => {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
-              <Link href="/docs" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuItem className="  ">
+              <Link href="/docs" legacyBehavior passHref className="">
+                <NavigationMenuLink
+                  className={cn(
+                    navigationMenuTriggerStyle(),
+                    "bg-white bg-opacity-25 backdrop-blur-sm"
+                  )}
+                >
                   Pricing
                 </NavigationMenuLink>
               </Link>
@@ -168,20 +179,39 @@ const NavBar = () => {
       </div>
 
       <div
-        className={`sm:hidden transition-all duration-300 fixed top-16 left-0 w-[80%] bg-white min-h-[90vh] shadow-lg ${
+        className={`sm:hidden transition-all duration-300 fixed top-16 mt-2 left-0 w-[80%] bg-white bg-opacity-90 backdrop-blur-sm min-h-[90vh] shadow-lg ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
+        <Accordion type="single" collapsible className="w-full">
+          <AccordionItem value="item-1" className="border-b">
+            <AccordionTrigger className="hover:bg-gray-100 py-4 w-full flex justify-center items-center gap-2 text-[15.8px] font-normal">
+              <span className="text-center">Start</span>
+            </AccordionTrigger>
+            <AccordionContent className="px-4 py-2 text-center">
+              Yes. It adheres to the WAI-ARIA design pattern.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-2" className="border-b">
+            <AccordionTrigger className="hover:bg-gray-100 py-4 w-full flex justify-center items-center gap-2 text-[15.8px] font-normal">
+              <span className="text-center">Run & Grow</span>
+            </AccordionTrigger>
+            <AccordionContent className="px-4 py-2 text-center">
+              Yes. It comes with default styles that matches the other
+              components&apos; aesthetic.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-3" className="border-b">
+            <AccordionTrigger className="hover:bg-gray-100 py-4 w-full flex justify-center items-center gap-2 text-[15.8px] font-normal">
+              <span className="text-center">Learn</span>
+            </AccordionTrigger>
+            <AccordionContent className="px-4 py-2 text-center">
+              Yes. It's animated by default, but you can disable it if you
+              prefer.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
         <div className="flex flex-col space-y-2 pb-4 w-full text-center gap-3">
-          <a href="#" className="hover:bg-gray-100 py-4">
-            Start
-          </a>
-          <a href="#" className="hover:bg-gray-100 py-4">
-            Run & Grow
-          </a>
-          <a href="#" className="hover:bg-gray-100 py-4">
-            Learn
-          </a>
           <a href="#" className="hover:bg-gray-100 py-4">
             Pricing
           </a>
