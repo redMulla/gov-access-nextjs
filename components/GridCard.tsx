@@ -27,12 +27,12 @@ const GridCard = ({
       <div className="col-span-1 flex align-center">
         <div
           className={`flex flex-col gap-5 my-auto ${
-            reverse ? "text-end ml-auto pe-10" : "ps-10"
+            reverse ? "text-end ml-auto pe-10 ps-4" : "ps-10 pe-4"
           }`}
         >
           <span
             className={`rounded-lg bg-gray-100 py-2 px-4 text-[15.8px] ${
-              reverse ? "text-end ml-auto" : ""
+              reverse ? "md:text-end ml-auto" : "md:text-start"
             }`}
             style={{ width: "max-content" }}
           >

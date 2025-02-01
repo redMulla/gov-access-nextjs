@@ -46,19 +46,19 @@ export default function Home() {
       <NavBar />
 
       <section className="container mx-auto pt-20 overflow-auto">
-        <div className="flex justify-center mt-20">
-          <button className="py-2 px-8 bg-blue-700 text-white rounded-full text-[20.3px]">
+        <div className="flex justify-center mt-12">
+          <span className="py-2 px-8 bg-blue-700 text-white rounded-full text-[20.3px]">
             Lorem ipsum v1.0.1
-          </button>
+          </span>
         </div>
 
         <div className="mt-7 text-center max-w-[960px] mx-auto w-full flex flex-col gap-6">
-          <span className="text-6xl font-bold leading-[81px]">
+          <span className="text-6xl font-bold leading-[1.2] tracking-[-0.05em]">
             Everything you need to start, run, and grow your company — all in
             one place.
           </span>
 
-          <span className="max-w-[683px] w-100 mx-auto text-[20.3px] text-[#334155] leading-[32.9px]">
+          <span className="max-w-[683px] w-100 mx-auto text-[20.3px] text-[#334155] leading-[32.9px] tracking-[-0.031875em]">
             Start an official company, manage finances, stay compliant, file
             taxes, send invoices, and get paid.
           </span>
