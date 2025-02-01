@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <div className="w-full py-4 flex justify-between align-center px-6 fixed bg-white bg-opacity-25 backdrop-blur-sm max-w-[100vw]">
-      <div className="sm:hidden my-auto">
+      <div className="sm:hidden my-auto pe-4">
         <button
           onClick={toggleMenu}
           className="flex flex-col space-y-1.5 focus:outline-none"
