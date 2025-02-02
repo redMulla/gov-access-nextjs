@@ -156,7 +156,7 @@ const NavBar = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem className="  ">
-              <Link href="/docs" legacyBehavior passHref className="">
+              <Link href="#" legacyBehavior passHref className="">
                 <NavigationMenuLink
                   className={cn(
                     navigationMenuTriggerStyle(),
@@ -188,7 +188,7 @@ const NavBar = () => {
             <AccordionTrigger className="hover:bg-gray-100 py-4 w-full flex justify-center items-center gap-2 text-[15.8px] font-normal">
               <span className="text-center">Start</span>
             </AccordionTrigger>
-            <AccordionContent className="px-4 py-2 text-center">
+            <AccordionContent className="px-4 py-2 text-start">
               Yes. It adheres to the WAI-ARIA design pattern.
             </AccordionContent>
           </AccordionItem>
@@ -196,7 +196,7 @@ const NavBar = () => {
             <AccordionTrigger className="hover:bg-gray-100 py-4 w-full flex justify-center items-center gap-2 text-[15.8px] font-normal">
               <span className="text-center">Run & Grow</span>
             </AccordionTrigger>
-            <AccordionContent className="px-4 py-2 text-center">
+            <AccordionContent className="px-4 py-2 text-start">
               Yes. It comes with default styles that matches the other
               components&apos; aesthetic.
             </AccordionContent>
@@ -205,7 +205,7 @@ const NavBar = () => {
             <AccordionTrigger className="hover:bg-gray-100 py-4 w-full flex justify-center items-center gap-2 text-[15.8px] font-normal">
               <span className="text-center">Learn</span>
             </AccordionTrigger>
-            <AccordionContent className="px-4 py-2 text-center">
+            <AccordionContent className="px-4 py-2 text-start">
               Yes. It's animated by default, but you can disable it if you
               prefer.
             </AccordionContent>
