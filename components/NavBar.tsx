@@ -91,7 +91,7 @@ const NavBar = () => {
         <img
           src="/images/Logo.svg"
           alt="logo"
-          className="cursor-pointer my-auto"
+          className="cursor-pointer my-auto w-[120px] md:w-auto"
         />
       </div>
 
