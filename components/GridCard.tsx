@@ -39,7 +39,7 @@ const GridCard = ({
         >
           {/* Tag */}
           <span
-            className={`rounded-lg bg-gray-100 py-2 px-4 text-[15.8px] mx-auto md:mx-0 ${
+            className={`rounded-lg bg-gray-100 py-2 px-4 text-[15.8px] mx-auto md:mx-0  ${
               reverse ? "md:ml-auto" : ""
             }`}
             style={{ width: "max-content" }}
@@ -48,7 +48,7 @@ const GridCard = ({
           </span>
 
           {/* Title and Description */}
-          <div className="max-w-[486px] mt-4 mx-auto md:mx-0">
+          <div className="max-w-[486px] mt-4 mx-auto md:mx-0 px-2 md:px-0">
             <p className="text-[27.86px] font-bold">{title}</p>
             <p className="text-[18px] mt-2">{description}</p>
 

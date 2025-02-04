@@ -2,7 +2,7 @@ import React from "react";
 
 const ReviewCard = () => {
   return (
-    <div className="max-w-[414px] w-full rounded-xl border px-4 py-6 h-full flex flex-col gap-5 shadow-md text-[18px]">
+    <div className="max-w-[414px] w-full rounded-xl border px-4 py-6 h-full flex flex-col gap-5 shadow-md text-[18px] mx-2 md:mx-0">
       <div>
         <img src="/images/facebook.svg" alt="" />
       </div>
